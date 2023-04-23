@@ -1,0 +1,52 @@
+.container {
+    border: rgb(0, 0, 0) solid 3px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 1rem;
+    background: linear-gradient(rgb(53, 51, 157), rgb(211, 130, 48));
+    color: white;
+  }
+  
+  .container h2{
+    margin-top: 3rem;
+  }
+  .lluvia{
+  width: 50%;
+  height: 30%;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header svg {
+    border: rgb(255, 255, 255) solid 1px;
+    border-radius: 50%;
+    padding: 0.6rem;
+  }
+  .text{
+    align-self: flex-start;
+    margin-top: 5rem;
+  }
+  .grados{
+    font-size: 6rem;
+    margin: 0;
+  }
+  .datos{
+    margin: 0;
+  
+  }
+  .cardDays{
+    height: 20vh;
+    border: black solid 1px;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
