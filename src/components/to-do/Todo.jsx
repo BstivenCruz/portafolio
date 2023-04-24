@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Todo({ item, onUpdate , onDelete}) {
+export default function Todo({ item, onUpdate, onDelete }) {
   const [isEdit, setIsedit] = useState(false);
 
   function FormEdit() {
@@ -40,14 +40,22 @@ export default function Todo({ item, onUpdate , onDelete}) {
     return (
       <div className="todoInfo">
         {item.title}
-        <button
-          onClick={() => {
-            setIsedit(true);
-          }}
-        >
-          editar
-        </button>
-        <button onClick={()=>{onDelete(item.id ,)}}>eliminar</button>
+        <div>
+          <button
+            onClick={() => {
+              setIsedit(true);
+            }}
+          >
+            editar
+          </button>
+          <button
+            onClick={() => {
+              onDelete(item.id);
+            }}
+          >
+            eliminar
+          </button>
+        </div>
       </div>
     );
   }

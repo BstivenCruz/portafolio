@@ -1,0 +1,83 @@
+.todoContainer {
+  width: 50%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(#0d110f66, #6f8c644a);
+  border-radius: 20px;
+  border: #dde2ff solid 1.5px;
+}
+.todosContainer {
+  width: 70%;
+}
+.todoCreateForm {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.todoInput {
+  border: #ffffff solid 1px;
+  border-radius: 10px;
+  width: 50%;
+  padding: 0.6rem 0.7rem;
+  background-color: #7026ed;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  font-weight: 530;
+  transition: 0.7s;
+
+}
+.todoInput::placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  transition: 0.7s;
+
+}
+.todoInput:hover::placeholder{
+    color: rgb(5, 4, 4);
+
+}
+
+
+.todoInput:hover {
+  border: #000000 solid 1px;
+}
+
+.botonCreate {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  text-transform: capitalize;
+  background-color: #7026ed;
+  color: rgb(255, 255, 255);
+  border: #ffffff solid 1px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 530;
+  transition: 0.7s;
+}
+.botonCreate:hover {
+  color: rgb(0, 0, 0);
+  border: #000000 solid 1px;
+}
+
+
+/* eoooooo */
+
+.todoInfo{
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background: #7026ed;
+    color: #ffffff;
+    margin: 1rem;
+}
