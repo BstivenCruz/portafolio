@@ -1,47 +1,41 @@
 import "./style.css";
-import Cards from "./Cards";
+import Cards from "../../Cards";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
-import { Fragment, useEffect, useState,  } from "react";
+import { Fragment, useEffect, useState } from "react";
+import WeatherForm from "./WeatherForm";
 
-function App() {
-  const [ciudad, setciudad] = useState("Bogota");
-  const [pais, setPais] = useState("");
-  const [temperatura, setTemperatura] = useState("");
-  const [valor , setValor ] = useState('')
-  const appId = "3935e24d25c491e6ff2069ac32274f4f";
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},mexico&appid=${appId}`;
+const REACT_APP_KEY = "8e6ce7c9d3904927873160949232404";
+const REACT_APP_API = "http://api.weatherapi.com/v1/current.json?";
+export default function ClimaApp() {
+  const [weather, setWeather] = useState(null);
 
-  useEffect(() => {
-    const DatosApi = async (url) => {
-      const respuesta = await fetch(url);
-      const resultado = await respuesta.json();
-      setPais(resultado.sys.country);
-      setTemperatura(resultado.main.temp);
-    };
-    DatosApi(url);
+  async function loadInfo(city = "London") {
+    try {
+      const request = await fetch(
+        `${REACT_APP_API}key=${REACT_APP_KEY}&q=${city}&aqi=no`
+      );
 
-  }, []);
+      const res = await request.json();
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
-
+  function handleChangeCity(city) {
+    setWeather(null);
+    loadInfo(city);
+  }
 
   return (
     <Fragment>
       <div className="container">
-        <div className="header">
-          <input
-            placeholder="ciudad"
-            type="text"
-          ></input>
-          <FontAwesomeIcon icon={faUser} />
-        </div>
+        <WeatherForm onChangeCity={handleChangeCity} />
         <h2>God day user!</h2>
-        <h3>
-          tiempo en {ciudad} / {pais}{" "}
-        </h3>
+        <h3>tiempo en</h3>
         <FontAwesomeIcon icon={faCloudBolt} className="lluvia" />
-        <p className="grados">{temperatura}</p>
+        <p className="grados">grados</p>
         <p className="datos"> clouds 21ºC/24ºC</p>
         <p className="text"> Forecast the next 7 days</p>
         <div className="cardDays">
@@ -53,5 +47,3 @@ function App() {
     </Fragment>
   );
 }
-
-export default App;

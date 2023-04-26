@@ -1,13 +1,11 @@
 import "./App.css";
-import TodoApp from "./components/to-do/TodoApp";
-
+import Landing from "./components/landingPage/Landing";
 
 function App() {
-  
   return (
-   <>
-<TodoApp />
-   </>
+    <>
+      <Landing />
+    </>
   );
 }
 
