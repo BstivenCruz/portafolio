@@ -15,17 +15,18 @@ export default function Landing() {
       </div>
       <div className="grupo6">
         <div className="hijo1">
-          <p>A Platform For All</p>
+          <p></p>
           <h1>
-            Learning to Drive <br />
-            Made Easy
+           Brandon Stiven <br />
+            Segura Cruz
           </h1>
-          <h2>Join Driver-bay Now</h2>
-          <button className="boton">Register now</button>
+          <h2>@stivencruz0</h2>
+          <button className="boton">About me</button>
         </div>
         <div className="hijo2">
           <div className="azul"></div>
           <div className="naranja"></div>
+          
           <div className="img"></div>
         </div>
       </div>

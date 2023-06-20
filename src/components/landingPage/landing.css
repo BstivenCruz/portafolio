@@ -3,6 +3,8 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  ;
 }
 
 .nav {
@@ -27,13 +29,13 @@
 }
 
 .boton {
-  border: #1375ed solid 1px;
+  border: #ed1313 solid 1px;
   border-radius: 10px 0;
   font-weight: 550;
   font-size: 16px;
   padding: 10px 15px;
   font-size: 16px;
-  background-color: #1375ed;
+  background-color: #ed1313;
   color: white;
   height: fit-content;
 }
@@ -50,7 +52,7 @@
   width: 50%;
 }
 .azul {
-  border: #1375ed solid 15px;
+  border: #ed1313 solid 15px;
   position: relative;
   left: 15%;
   top: -4%;
@@ -59,7 +61,7 @@
   border-radius: 50px 0;
 }
 .naranja {
-  border: #f37238 solid 15px;
+  border: #000000 solid 15px;
   width: 60%;
   height: 80%;
   border-radius: 50px 0;
@@ -71,8 +73,9 @@
   position: relative;
   top: -172%;
   right: -5%;
-  border: #000000 solid 3px;
-  background-color: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.212),rgba(255, 0, 0, 0.212)), url('../../assets/img/perfil.jpg');
+  background-size: cover;
+  background-position: center;
   width: 70%;
   height: 90%;
   border-radius: 0 50px;
@@ -92,7 +95,7 @@
 }
 .hijo1 h2 {
   font-size: 54px;
-  color: #1375ed;
+  color: #ed1313;
 }
 .grupo7 {
   padding: 5vh 10vh;

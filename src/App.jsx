@@ -1,10 +1,10 @@
 import "./App.css";
-import Landing from "./components/landingPage/Landing";
+import Dthree from "./components/dthree/dtree";
 
 function App() {
   return (
     <>
-      <Landing />
+      <Dthree />
     </>
   );
 }

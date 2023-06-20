@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  background-color: #242121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 25%;
+  height: 43%;
+  border-radius: 50%;
+  background: linear-gradient(rgba(25, 4, 4, 0.537),rgba(36, 7, 7, 0.585)) ,url("https://st.depositphotos.com/1129232/5158/v/450/depositphotos_51583655-stock-illustration-freedom-concept-vector-red-fist.jpg");
+  background-position: center;
+  background-size: cover;
+}
